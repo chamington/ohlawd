@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+body{
+	background-image:url(ohlawd.gif);
+}
+h1{
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	color:#FF0;
+	font-size:10vw;
+}
+nav{
+	width:100%;
+	margin:0px;
+	height:100px;
+	background-color:#69C;
+	border-width:thick;
+	border-style:groove;
+	border-color:#963;
+}
+a{
+	display:block;
+}
+
+</style>
+<script src="jquery.js"></script>
+<script>
+$( document ).ready(function() {
+myAudio = new Audio('coffee.mp3'); 
+myAudio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+myAudio.play();
+});
+</script>
+</head>
+
+<body>
+<nav>
+<div>
+<a href="#">coffee</a>
+<a href="#">coffee</a>
+<a href="#">coffee</a>
+<a href="#">coffee</a>
+<a href="#">coffee</a>
+</div>
+</nav>
+<h1>ATP coffee</h1>
+</body>
+</html>
